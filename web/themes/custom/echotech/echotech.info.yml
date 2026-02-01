@@ -1,0 +1,9 @@
+name: Echotech
+type: theme
+base theme: mercury
+description: 'Custom sub-theme of Mercury with component overrides.'
+core_version_requirement: ^11
+regions:
+  content: Content
+  header: Header
+  footer: Footer
