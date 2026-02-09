@@ -3,7 +3,7 @@
 
 {% set cta_variants =
   html_cva(
-    base: ['cq-full relative z-1'],
+    base: ['cqw relative z-1'],
     variants: {
       backgroundColor: {
         primary: 'bg-primary text-primary-foreground',
@@ -85,22 +85,8 @@
           text_color: 'default',
           url: '',
           heading_classes: 'max-w-3xl',
-          text_size: 'heading-responsive-7xl'
-        },
-        with_context: false
-      )
-    }}
-    {{
-      include(
-        'echotech:heading',
-        {
-          heading_text: subheading_text|default(''),
-          level: level - 1|default(2),
-          align: cta_text_align,
-          text_color: 'primary',
-          url: '',
-          heading_classes: 'max-w-3xl',
-          text_size: 'heading-responsive-7xl'
+          text_size: 'heading-responsive-7xl',
+          subheading: subheading_text|default(''),
         },
         with_context: false
       )
