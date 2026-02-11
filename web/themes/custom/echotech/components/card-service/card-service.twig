@@ -97,7 +97,7 @@
             {
               icon: icon,
               icon_size: icon_size_map[icon_size]|default('medium'),
-              icon_classes: ['p-2', 'bg-accent', 'rounded-lg'],
+              icon_classes: ['p-4', 'bg-accent', 'rounded-lg'],
             },
             with_context: false
           )
@@ -113,7 +113,7 @@
               <h3>{{ text }}</h3>
             {% endif %}
             {% if description is not empty %}
-              <span class="mt-3">{{ description }}</span>
+              <span class="">{{ description }}</span>
             {% endif %}
           </a>
         {% else %}
@@ -122,7 +122,7 @@
               <h3>{{ text }}</h3>
             {% endif %}
             {% if description is not empty %}
-              <span class="mt-3">{{ description }}</span>
+              <span class="">{{ description }}</span>
             {% endif %}
           </span>
         {% endif %}
